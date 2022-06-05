@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" media="screen" href="styles.screen.css" />
+
+    <title>NodeBB-Clone</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1><a href="/">NodeBB Clone</a></h1>
+        <ul>
+          <li>
+            categories
+            <a href="#"><i class="fa fa-fw fa-list"></i></a>
+          </li>
+          <li>
+            unread
+            <a href="#"><i class="fa fa-fw fa-inbox"></i></a>
+          </li>
+          <li>
+            recent
+            <a href="#"><i class="fa fa-fw fa-clock-o"></i></a>
+          </li>
+          <li>
+            tags
+            <a href="#"><i class="fa fa-fw fa-tags"></i></a>
+          </li>
+          <li>
+            popular
+            <a href="#"><i class="fa fa-fw fa-fire"></i></a>
+          </li>
+          <li>
+            users
+            <a href="#"><i class="fa fa-fw fa-user"></i></a>
+          </li>
+          <li>
+            group
+            <a href="#"><i class="fa fa-fw fa-group"></i></a>
+          </li>
+          <li>
+            admin
+            <a href="#"><i class="fa fa-fw fa-cogs"></i></a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#"><i class="fa fa-fw fa-search"></i></a>
+          </li>
+          <li>Register</li>
+          <li>Login</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <ol>
+        <li><a href="">Home</a></li>
+        <li><a href="">Categories</a></li>
+      </ol>
+      <ul class="categories">
+        <h2>Categories</h2>
+        <li>
+          <div class="column">
+            <div id="annon-bubble" class="icon">
+              <i class="fa fa-bullhorn" aria-hidden="true"></i>
+            </div>
+            <h3>Announcements</h3>
+            <p>Announcements regarding our community</p>
+          </div>
+          <div class="topics-posts">
+            <div class="topics">
+              <span>1</span><br />
+              <small>Topics</small>
+            </div>
+            <div class="posts">
+              <span>1</span><br />
+              <small>Posts</small>
+            </div>
+          </div>
+          <div id="annon-latest" class="latest">
+            <p>
+              <span>A</span>
+              <time>Jul 12, 2017, 9:45 PM</time>
+            </p>
+
+            <p>This website is a demo instance of Nodebb that you</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="column">
+            <div id="disc-bubble" class="icon">
+              <i class="fa fa-comments-o" aria-hidden="true"></i>
+            </div>
+            <h3>General Discussion</h3>
+            <p>A place to talk about whatever you want</p>
+          </div>
+          <div class="topics-posts">
+            <div class="topics">
+              <span>3</span><br />
+              <small>Topics</small>
+            </div>
+            <div class="posts">
+              <span>5</span><br />
+              <small>Posts</small>
+            </div>
+          </div>
+          <div id="disc-latest" class="latest">
+            <p>
+              <span>A</span>
+              <time>Jul 12, 2017, 9:45 PM</time>
+            </p>
+
+            <p>This website is a demo instance of Nodebb that you</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="column">
+            <div id="comms-bubble" class="icon">
+              <i class="fa fa-bullhorn" aria-hidden="true"></i>
+            </div>
+            <h3>Comments & Feedback</h3>
+            <p>Got a question? Ask away!</p>
+          </div>
+          <div class="topics-posts">
+            <div class="topics">
+              <span>1</span><br />
+              <small>Topics</small>
+            </div>
+            <div class="posts">
+              <span>2</span><br />
+              <small>Posts</small>
+            </div>
+          </div>
+          <div id="comms-latest" class="latest">
+            <p>
+              <span>A</span>
+              <time>Jul 12, 2017, 9:45 PM</time>
+            </p>
+
+            <p>This website is a demo instance of Nodebb that you</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="column">
+            <div id="blog-bubble" class="icon">
+              <i class="fa fa-newspaper-o aria-hidden="true"></i>
+            </div>
+            <h3>Blogs</h3>
+            <p>Blog posts from individual members</p>
+          </div>
+          <div class="topics-posts">
+            <div class="topics">
+              <span>1</span><br />
+              <small>Topics</small>
+            </div>
+            <div class="posts">
+              <span>1</span><br />
+              <small>Posts</small>
+            </div>
+          </div>
+          <div id="blog-latest" class="latest">
+            <p>
+              <span>A</span>
+              <time>Jul 12, 2017, 9:45 PM</time>
+            </p>
+
+            <p>This website is a demo instance of Nodebb that you</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="column">
+            <div id="testing-bubble" class="icon">
+              <i class="fa fa-bomb" aria-hidden="true"></i>
+            </div>
+            <h3>Testing Ground</h3>
+            <p>Anyone can posts here to test NodeBB, even guests!</p>
+          </div>
+          <div class="topics-posts">
+            <div class="topics">
+              <span>0</span><br />
+              <small>Topics</small>
+            </div>
+            <div class="posts">
+              <span>0</span><br />
+              <small>Posts</small>
+            </div>
+          </div>
+          <div id="testing-latest" class="latest">
+            <p>
+              <span>A</span>
+              <time>Jul 12, 2017, 9:45 PM</time>
+            </p>
+
+            <p>This website is a demo instance of Nodebb that you</p>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <footer>Powered by Me</footer>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
