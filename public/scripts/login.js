@@ -9,7 +9,7 @@ export async function loginHandle(event, loginForm) {
     let formData = new FormData(loginForm);
 
     let formDataJSON = await convertFormDataToJSON(formData);
-    //   console.log(Array.from(formData));
+    // console.log(Array.from(formData));
 
     let response = await fetch("http://localhost:6969/api/login", {
       method: "POST",
@@ -24,7 +24,11 @@ export async function loginHandle(event, loginForm) {
       throw new Error("Bad Server Response");
     }
 
-    return response.json();
+    let { token, user } = await response.json();
+
+    // TODO: handle storing token
+
+    return true;
   } catch (err) {
     console.log(err);
   }

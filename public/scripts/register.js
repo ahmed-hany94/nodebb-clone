@@ -28,7 +28,7 @@ export async function registerHandle(event, registerForm) {
       throw new Error("Bad Server Response");
     }
 
-    return response.json();
+    return true;
   } catch (err) {
     console.log(err);
   }
